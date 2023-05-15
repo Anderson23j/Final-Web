@@ -16,7 +16,7 @@ function NavBar() {
         <ul>
           <li className="li">
             <Link to={"/"} className="link">
-              Inicio{" "}
+              Inicio
             </Link>
           </li>
           <li>

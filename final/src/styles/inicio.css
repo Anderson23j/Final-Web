@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-color: rgb(201, 201, 201);
+}
+.Card {
+  margin-top: 4rem;
+  margin-right: 10rem;
+  margin-left: 20px;
+  align-items: center;
+}
+.inicio {
+  margin-top: 8rem;
+  margin-right: 10rem;
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #29335c;
+  align-items: center;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0; /* Elimina el margen superior del título */
+}
+.p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 0; /* Elimina el margen inferior del párrafo */
+  margin-top: 1rem;
+  margin-left: 4%;
+  text-align: center;
+}
+.Card_img {
+  border: 1px solid #ccc;
+  width: 400px;
+  margin-left: 18%;
+  border-radius: 0px 80px;
+}
+p {
+  font-size: 25px;
+  margin-left: 12rem;
+}
+@media (max-width: 767px) {
+  /* Estilos específicos para pantallas pequeñas */
+}
+
+/* Estilos para pantallas de tamaño mediano (tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos específicos para pantallas medianas */
+}
+
+/* Estilos para pantallas de tamaño grande (desktop) */
+@media (min-width: 1024px) {
+  /* Estilos específicos para pantallas grandes */
+}
