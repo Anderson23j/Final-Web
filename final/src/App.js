@@ -6,7 +6,7 @@ import Footer from "./componentes/footer";
 import Error404 from "./componentes/error404";
 import Vehiculo from "./componentes/vehiculo";
 import Map from "./componentes/sedes";
-
+import Servicios from "./componentes/servicio";
 function App() {
   return (
     <React.Fragment>
@@ -14,7 +14,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Inicio />}></Route>
-          <Route exact path="/servicio" element={<Error404 />}></Route>
+          <Route exact path="/servicio" element={<Servicios />}></Route>
           <Route exact path="/Sedes" element={<Map />}></Route>
           <Route exact path="/vehiculo" element={<Vehiculo />}></Route>
           <Route exact path="/nosotros" element={<Error404 />}></Route>
