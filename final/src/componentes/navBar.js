@@ -41,7 +41,7 @@ function NavBar() {
           </li>
           <li>
             <Link to={"/contacto"} className="link">
-              contacto
+              Contacto
             </Link>
           </li>
         </ul>
