@@ -1,0 +1,26 @@
+/* Estilo del contenedor principal */
+.star-rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo de las estrellas */
+.star {
+  font-size: 34px;
+  cursor: pointer;
+  color: #ccc;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Estilo de las estrellas llenas */
+.star.filled {
+  color: #ffc107;
+}
+.estrellas {
+  text-align: center;
+  margin-top: 3.2rem;
+  font-size: 20px;
+  color: white;
+}

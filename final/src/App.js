@@ -4,6 +4,8 @@ import NavBar from "./componentes/navBar";
 import Inicio from "./componentes/inicio";
 import Footer from "./componentes/footer";
 import Error404 from "./componentes/error404";
+import Vehiculo from "./componentes/vehiculo";
+import Map from "./componentes/sedes";
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Inicio />}></Route>
           <Route exact path="/servicio" element={<Error404 />}></Route>
-          <Route exact path="/Sedes" element={<Error404 />}></Route>
-          <Route exact path="/Blog" element={<Error404 />}></Route>
+          <Route exact path="/Sedes" element={<Map />}></Route>
+          <Route exact path="/vehiculo" element={<Vehiculo />}></Route>
           <Route exact path="/nosotros" element={<Error404 />}></Route>
           <Route exact path="/contacto" element={<Error404 />}></Route>
         </Routes>

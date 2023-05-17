@@ -1,11 +1,12 @@
 import React from "react";
-import "../styles/footer.css";
+/* import "../styles/footer.css"; */
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <footer>
-      <small>Copyright © 2023 Taller M&A.</small>
-    </footer>
+    <>
+      <footer>{`Copyright © Taller M&A ${year}`}</footer>
+    </>
   );
 }
 

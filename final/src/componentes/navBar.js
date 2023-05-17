@@ -30,8 +30,8 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to={"/blog"} className="link">
-              Blog
+            <Link to={"/vehiculo"} className="link">
+              Tu vehiculo
             </Link>
           </li>
           <li>

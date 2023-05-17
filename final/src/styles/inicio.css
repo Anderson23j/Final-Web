@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(235, 235, 235);
 }
 .Card {
   margin-top: 4rem;
@@ -16,10 +16,10 @@ body {
   align-items: center;
 }
 .inicio {
-  margin-top: 8rem;
+  margin-top: 3.5rem;
   margin-right: 10rem;
   width: 300px;
-  height: 200px;
+  height: 320px;
   float: right;
   margin-left: 20px;
   padding: 20px;
@@ -27,7 +27,7 @@ body {
   background-color: #29335c;
   align-items: center;
 }
-h1 {
+.h1 {
   color: rgb(255, 255, 255);
   font-size: 35px;
   text-align: center;
@@ -63,4 +63,80 @@ p {
 /* Estilos para pantallas de tamaño grande (desktop) */
 @media (min-width: 1024px) {
   /* Estilos específicos para pantallas grandes */
+}
+
+.container {
+  display: flex;
+}
+
+.Card1 {
+  flex: 1; /* Distribuye el espacio disponible entre las cards */
+  margin: 5rem 1rem; /* Ajusta los márgenes según tus necesidades */
+  width: 500px;
+  height: 340px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #b8bfdb;
+  align-items: center;
+}
+
+.Card1:nth-child(odd) {
+  margin-right: 5rem; /* Añade un margen derecho solo a las cards impares */
+}
+
+.Card1:nth-child(even) {
+  margin-left: 52rem; /* Añade un margen izquierdo solo a las cards pares */
+  margin-top: -26rem;
+}
+
+/* Estilos comunes a ambas cards */
+.titulo_h2 {
+  margin-left: 18%;
+  font-size: 30px;
+}
+
+.icon1 {
+  margin-left: 12rem;
+  margin-top: 1rem;
+}
+
+.texto {
+  margin-top: 1rem;
+  margin-left: 5%;
+  text-align: justify;
+}
+
+.animated-h1 {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.animated-h1:hover {
+  cursor: pointer;
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.animated-h1 {
+  margin-left: 35rem;
+  margin-top: 25px;
+  margin-bottom: -2%;
 }
