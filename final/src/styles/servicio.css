@@ -1,34 +1,30 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; /* Agregado para centrar verticalmente */
-    height: 100vh; /* Agregado para centrar verticalmente */
+    padding: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
   }
   
   .card {
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 16px;
-    margin: 16px;
-    background-color: #f9f9f9;
-    display: flex; /* Agregado para alinear imagen y contenido */
-    flex-direction: column; /* Agregado para alinear imagen y contenido */
-    align-items: center; /* Agregado para alinear imagen y contenido */
-    text-align: center; /* Agregado para centrar el texto */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: right; /* Alinea el texto a la derecha */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .card img {
-    width: 100%; /* Ajustar el ancho de la imagen al 100% */
-    height: auto; /* Ajustar la altura de la imagen automáticamente */
-    margin-bottom: 16px; /* Espacio entre la imagen y el contenido */
+  h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   
-  @media (max-width: 768px) {
-    .card {
-      width: 100%;
-      margin: 16px 0;
-    }
+  p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.4;
   }
   
