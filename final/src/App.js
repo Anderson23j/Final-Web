@@ -7,7 +7,8 @@ import Error404 from "./componentes/error404";
 import Vehiculo from "./componentes/vehiculo";
 import Map from "./componentes/sedes";
 import Servicios from "./componentes/servicio";
-import nosotros from "./componentes/servicio";
+import Nosotros from "./componentes/nosotros";
+
 
 function App() {
   return (
