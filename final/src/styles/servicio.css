@@ -1,13 +1,21 @@
 .contenedor {
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
+}
+
+:root {
+  --mainColor: #29335c;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
 }
 
 .carta {
-  width: 200px;
+  width: 240px;
   height: 300px;
-  margin: 10px;
-  background-color: lightblue;
+  margin: 3rem;
+  background-color: var(--mainColorLight);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -19,6 +27,10 @@
 
 .carta:hover {
   transform: scale(1.1);
+  background-color: var(--mainColor);
+}
+.h3:hover {
+  color: var(--secondaryColor);
 }
 
 .contenido {
@@ -30,13 +42,14 @@
   flex-direction: column;
   justify-content: center;
 }
-
-.carta h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.h3 {
+  font-size: 20px;
+  margin-bottom: 2%;
+  color: var(--textColor);
 }
 
 .editable {
+  color: black;
   min-height: 40px;
   outline: none;
   border: none;
@@ -45,5 +58,4 @@
   hyphens: auto;
   white-space: pre-wrap;
   word-break: break-word;
-  
 }

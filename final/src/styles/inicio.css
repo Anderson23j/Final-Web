@@ -49,7 +49,7 @@ body {
 }
 p {
   font-size: 25px;
-  margin-left: 18rem;
+  margin-left: 12rem;
 }
 @media (max-width: 767px) {
   /* Estilos específicos para pantallas pequeñas */
