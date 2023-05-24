@@ -1,13 +1,18 @@
-import React from "react";
-/* import "../styles/footer.css"; */
+import React, { useEffect } from "react";
 import "../styles/footer.css";
 
 const Footer = () => {
-  const year = new Date().getFullYear();
+  useEffect(() => {
+    const footer = document.querySelector("footer");
+    footer.classList.add("footer-animation");
+  }, []);
+
   return (
-    <>
-      <footer>{`Copyright © Taller M&A ${year}`}</footer>
-    </>
+    <footer>
+      <div className="footer-content">
+        <p className="p-footer">© 2023 Todos los derechos reservados</p>
+      </div>
+    </footer>
   );
 };
 
