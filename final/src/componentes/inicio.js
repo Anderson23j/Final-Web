@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/inicio.css";
 import StarRating from "./StarRating";
+
 function Inicio() {
   return (
     <>

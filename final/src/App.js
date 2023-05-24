@@ -2,13 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./componentes/navBar";
 import Inicio from "./componentes/inicio";
-import Footer from "./componentes/footer";
 import Error404 from "./componentes/error404";
 import Vehiculo from "./componentes/vehiculo";
 import Map from "./componentes/sedes";
 import Servicios from "./componentes/servicio";
 import Nosotros from "./componentes/nosotros";
-
+import Footer from "./componentes/footer.js";
 
 function App() {
   return (
