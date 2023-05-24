@@ -46,11 +46,10 @@ function Inicio() {
         </div>
         <div className="Card1">
           <img className="icon1" src={require("../img/icono2.png")} />
-          <h2 className="titulo_h2">Técnicos especializados</h2>
+          <h2 className="titulo_h2">Tecnología de punta</h2>
           <p className="texto">
-            Contamos con técnicos especializados, <br />
-            para darte el mejor servicio de mecánica,
-            <br /> en la ciudad de Medellín.
+            Ofrecemos las mejores soluciones profesionales y especializadas, con
+            los mejores equipos en tecnología..
           </p>
         </div>
       </div>
