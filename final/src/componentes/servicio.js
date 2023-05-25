@@ -7,14 +7,16 @@ const CartasAzules = () => {
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">MECANICA BASICA</h3>
-          <p className="editable">Texto de la Carta 1</p>
+          <p className="editable">
+            Alineacion y Balenceo Cambio de Aceite Cambio de Frenos Sincronizacion
+          </p>
         </div>
       </div>
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">MECANICA ESPECIALIZADA</h3>
           <p contentEditable="true" className="editable">
-            asds
+            Aire Acondicionado Amortiguadores Correa de Reparticion Kit de Embrague Reparacion de Motor
           </p>
         </div>
       </div>
@@ -22,7 +24,7 @@ const CartasAzules = () => {
         <div className="contenido">
           <h3 className="h3">ESTETICA AUTOMOTRIZ</h3>
           <p contentEditable="true" className="editable">
-            ASDASDA
+            Latoneria Pintura
           </p>
         </div>
       </div>
