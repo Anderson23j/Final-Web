@@ -1,26 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./componentes/navBar";
-import Inicio from "./componentes/inicio";
-import Error404 from "./componentes/error404";
-import Vehiculo from "./componentes/vehiculo";
-import Map from "./componentes/sedes";
-import Servicios from "./componentes/servicio";
-import Nosotros from "./componentes/nosotros";
+import NavBar from "./componentes/navBar.js";
+import Inicio from "./componentes/inicio.js";
+import Map from "./componentes/sedes.js";
+import Servicios from "./componentes/servicio.js";
+import Nosotros from "./componentes/nosotros.js";
 import Footer from "./componentes/footer.js";
+import App from "./componentes/RegistroyConsulta.js";
+import Error404 from "./componentes/error404.js";
 
-function App() {
+function MainApp() {
   return (
     <React.Fragment>
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<Inicio />}></Route>
-          <Route exact path="/servicio" element={<Servicios />}></Route>
-          <Route exact path="/Sedes" element={<Map />}></Route>
-          <Route exact path="/vehiculo" element={<Vehiculo />}></Route>
-          <Route exact path="/nosotros" element={<Nosotros />}></Route>
-          <Route exact path="/contacto" element={<Error404 />}></Route>
+          <Route exact path="/" element={<Inicio />} />
+          <Route exact path="/servicio" element={<Servicios />} />
+          <Route exact path="/sedes" element={<Map />} />
+          <Route exact path="/vehiculo" element={<App />} />
+          <Route exact path="/nosotros" element={<Nosotros />} />
+          <Route exact path="/contacto" element={<Error404 />} />
         </Routes>
         <Footer />
       </Router>
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp;

@@ -1,0 +1,76 @@
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+
+const app = express();
+const port = 3001;
+
+// Conexión a la base de datos MongoDB
+mongoose
+  .connect("mongodb://127.0.0.1:27017/vehiculos", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Conexión a MongoDB exitosa");
+  })
+  .catch((error) => {
+    console.error("Error al conectar a MongoDB:", error);
+  });
+
+// Definir el esquema del vehículo
+const vehiculoSchema = new mongoose.Schema({
+  marca: String,
+  modelo: String,
+  anio: Number,
+});
+
+// Definir el modelo del vehículo
+const Vehiculo = mongoose.model("Vehiculo", vehiculoSchema);
+
+app.use(express.json());
+app.use(cors());
+
+// Ruta para registrar un vehículo
+app.post("/vehiculos", (req, res) => {
+  const { marca, modelo, anio } = req.body;
+
+  const nuevoVehiculo = new Vehiculo({
+    marca,
+    modelo,
+    anio,
+  });
+
+  nuevoVehiculo
+    .save()
+    .then(() => {
+      res.status(201).json({ message: "Vehículo registrado exitosamente" });
+    })
+    .catch((error) => {
+      console.error("Error al registrar el vehículo:", error);
+      res.status(500).json({ error: "Error al registrar el vehículo" });
+    });
+});
+
+// Ruta para consultar un vehículo por ID
+app.get("/vehiculos/:id", (req, res) => {
+  const { id } = req.params;
+
+  Vehiculo.findById(id)
+    .then((vehiculo) => {
+      if (vehiculo) {
+        res.status(200).json(vehiculo);
+      } else {
+        res.status(404).json({ error: "Vehículo no encontrado" });
+      }
+    })
+    .catch((error) => {
+      console.error("Error al consultar el vehículo:", error);
+      res.status(500).json({ error: "Error al consultar el vehículo" });
+    });
+});
+
+// Iniciar el servidor
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
+});
