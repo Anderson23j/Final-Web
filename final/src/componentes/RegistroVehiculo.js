@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import swal from "sweetalert"; // Importar SweetAlert
+import "../index.css";
 
 function RegistroVehiculo() {
   const [marca, setMarca] = useState("");
@@ -10,15 +12,23 @@ function RegistroVehiculo() {
     axios
       .post("http://localhost:3001/vehiculos", { marca, modelo, anio })
       .then((response) => {
-        console.log(response.data.message);
+        swal("Registro Exitoso", response.data.message, "success"); // Mostrar SweetAlert de éxito
+        limpiarCampos();
       })
       .catch((error) => {
+        swal("Error", "Error al registrar el vehículo", "error"); // Mostrar SweetAlert de error
         console.error("Error al registrar el vehículo:", error);
       });
   };
 
+  const limpiarCampos = () => {
+    setMarca("");
+    setModelo("");
+    setAnio("");
+  };
+
   return (
-    <div>
+    <div className="registro-vehiculo">
       <h1>Registro de Vehículo</h1>
       <input
         type="text"

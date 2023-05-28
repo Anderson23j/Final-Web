@@ -1,35 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
 :root {
   --mainColor: #29335c;
   --mainColorLight: #5767aa;
   --secondaryColor: #db2b39;
   --textColor: #eee;
 }
-.registro-vehiculo {
+
+.consulta-vehiculo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
-.registro-vehiculo input {
+.consulta-vehiculo__title {
+  font-size: 24px;
+  margin-top: -22rem;
+}
+
+.consulta-vehiculo__input {
   margin-bottom: 10px;
   padding: 5px;
-  width: 200px;
 }
 
-.registro-vehiculo button {
+.consulta-vehiculo__button {
+  margin-top: 10px;
+  padding: 5px 10px;
+
   border-radius: 20px;
   padding: 10px 20px;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: var(--textColor);
   background-color: var(--mainColorLight);
   border: none;
   cursor: grab;
 }
-
-.registro-vehiculo button:hover {
+.consulta-vehiculo__button:hover {
   background-color: var(--mainColor);
+}
+
+h1 {
+  text-align: center;
 }
