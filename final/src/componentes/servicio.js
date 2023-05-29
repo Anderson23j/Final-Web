@@ -16,7 +16,7 @@ const CartasAzules = () => {
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">MECANICA ESPECIALIZADA</h3>
-          <p contentEditable="true" className="editable">
+          <p className="editable">
             Aire Acondicionado Amortiguadores Correa de Reparticion Kit de
             Embrague Reparacion de Motor
           </p>
@@ -25,9 +25,7 @@ const CartasAzules = () => {
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">ESTETICA AUTOMOTRIZ</h3>
-          <p contentEditable="true" className="editable">
-            Latoneria Pintura
-          </p>
+          <p className="editable">Latoneria Pintura</p>
         </div>
       </div>
     </div>
