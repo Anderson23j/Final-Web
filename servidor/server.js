@@ -8,7 +8,7 @@ const port = 3001;
 
 // Conexión a la base de datos MongoDB
 mongoose
-  .connect("mongodb://127.0.0.1:27017/mydatabase", {
+  .connect("mongodb://127.0.0.1:27017/vehiculos", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
