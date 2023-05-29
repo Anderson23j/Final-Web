@@ -36,23 +36,6 @@ const Chat = () => {
 
   return (
     <div className="app">
-      <div className="chat-container">
-        <div className="chat-header">Icono de chat</div>
-        <div className="chat-body">
-          <div className="message-container">
-            {messages.map((message, index) => (
-              <div key={index} className="message">
-                <span className="user">{message.user}: </span>
-                <span className="text">{message.text}</span>
-              </div>
-            ))}
-          </div>
-          <div className="input-container">
-            <input type="text" value={input} onChange={handleInputChange} />
-            <button onClick={handleMessageSubmit}>Enviar</button>
-          </div>
-        </div>
-      </div>
       <Widget
         handleNewUserMessage={handleNewUserMessage}
         title="ChatBot"
