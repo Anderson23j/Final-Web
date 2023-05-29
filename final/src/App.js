@@ -8,6 +8,8 @@ import Nosotros from "./componentes/nosotros.js";
 import Footer from "./componentes/footer.js";
 import App from "./componentes/RegistroyConsulta.js";
 import Error404 from "./componentes/error404.js";
+import Chat from "./componentes/chatBot.js";
+import reportWebVitals from "./reportWebVitals";
 
 function MainApp() {
   return (
@@ -20,7 +22,7 @@ function MainApp() {
           <Route exact path="/sedes" element={<Map />} />
           <Route exact path="/vehiculo" element={<App />} />
           <Route exact path="/nosotros" element={<Nosotros />} />
-          <Route exact path="/contacto" element={<Error404 />} />
+          <Route exact path="/contacto" element={<Chat />} />
         </Routes>
         <Footer />
       </Router>
