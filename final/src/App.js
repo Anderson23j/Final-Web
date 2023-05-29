@@ -8,8 +8,7 @@ import Nosotros from "./componentes/nosotros.js";
 import Footer from "./componentes/footer.js";
 import App from "./componentes/RegistroyConsulta.js";
 import Error404 from "./componentes/error404.js";
-import Chat from "./componentes/chatBot.js";
-import reportWebVitals from "./reportWebVitals";
+import ContactoChat from "./componentes/ContactoChat.js";
 
 function MainApp() {
   return (
@@ -22,7 +21,7 @@ function MainApp() {
           <Route exact path="/sedes" element={<Map />} />
           <Route exact path="/vehiculo" element={<App />} />
           <Route exact path="/nosotros" element={<Nosotros />} />
-          <Route exact path="/contacto" element={<Chat />} />
+          <Route exact path="/contacto" element={<ContactoChat />} />
         </Routes>
         <Footer />
       </Router>

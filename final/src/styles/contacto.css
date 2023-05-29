@@ -1,0 +1,38 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.social-icons {
+  display: flex;
+  gap: 50px;
+  font-size: 60px;
+}
+
+/* Estos estilos son para los iconos de Font Awesome, asegúrate de incluir la biblioteca correspondiente en tu proyecto */
+.fa-facebook {
+  color: #000000;
+}
+
+.fa-twitter {
+  color: #000000;
+}
+
+.fa-instagram {
+  color: #000000;
+}
+
+.fa-facebook:hover {
+  color: #0b72d3;
+}
+
+.fa-twitter:hover {
+  color: #3ea6e2;
+}
+
+.fa-instagram:hover {
+  color: #c966dd;
+}

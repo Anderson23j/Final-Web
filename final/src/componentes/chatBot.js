@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Widget, addResponseMessage, setQuickButtons } from "react-chat-widget";
+import React, { useEffect } from "react";
+import { Widget, addResponseMessage } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 
 const Chat = () => {
-  const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState("");
-
   useEffect(() => {
     addResponseMessage("Hola, ¿necesitas ayuda?");
   }, []);
@@ -16,22 +13,6 @@ const Chat = () => {
     } else {
       addResponseMessage("Lo siento, no puedo entenderte en este momento.");
     }
-  };
-
-  const handleMessageSubmit = () => {
-    if (input.trim() !== "") {
-      const newMessage = {
-        user: "user",
-        text: input,
-      };
-
-      setMessages([...messages, newMessage]);
-      setInput("");
-    }
-  };
-
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
   };
 
   return (
