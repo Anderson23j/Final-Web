@@ -14,7 +14,7 @@ function ConsultaVehiculo() {
         setVehiculo(response.data);
       })
       .catch((error) => {
-        console.error("Error al consultar el vehículo:", error);
+        swal("Error al consultar el vehículo:", error);
         setVehiculo(null);
       });
   };
