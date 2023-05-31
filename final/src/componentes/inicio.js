@@ -30,8 +30,8 @@ function Inicio() {
           />
           <h2 className="titulo_h2">Técnicos especializados</h2>
           <p className="texto">
-            Contamos con técnicos especializados, <br />
-            para darte el mejor servicio de mecánica,
+            Contamos con técnicos especializados, para darte el mejor servicio
+            de mecánica,
             <br /> en la ciudad de Medellín.
           </p>
         </div>
