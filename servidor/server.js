@@ -93,23 +93,6 @@ app.put("/vehiculos/:id", (req, res) => {
 });
 
 // Ruta para eliminar un vehículo por ID
-app.delete("/vehiculos/:id", (req, res) => {
-  const { id } = req.params;
-
-  Vehiculo.findByIdAndRemove(id)
-    .then((vehiculo) => {
-      if (vehiculo) {
-        swal("Vehículo eliminado exitosamente");
-        res.status(200).json({ message: "Vehículo eliminado exitosamente" });
-      } else {
-        res.status(404).json({ error: "Vehículo no encontrado" });
-      }
-    })
-    .catch((error) => {
-      swal("Error al eliminar el vehículo: " + error);
-      res.status(500).json({ error: "Error al eliminar el vehículo" });
-    });
-});
 
 // Iniciar el servidor
 app.listen(port, () => {

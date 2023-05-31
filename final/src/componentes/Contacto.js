@@ -6,6 +6,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "../styles/contacto.css";
+
 const ContactPage = () => {
   return (
     <div className="contact-container">
