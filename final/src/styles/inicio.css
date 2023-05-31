@@ -1,3 +1,9 @@
+:root {
+  --mainColor: #29335c;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+}
 .inicio {
   text-align: center;
 }
@@ -24,10 +30,15 @@
   margin-top: 40px;
 }
 
-.card {
+.card1 {
   width: 300px;
   padding: 20px;
-  background-color: #3498db;
+  background-color: #5767aa;
+}
+.card {
+  width: 350px;
+  padding: 20px;
+  background-color: var(--mainColorLight);
   border-radius: 10px;
   color: white;
   text-align: center;

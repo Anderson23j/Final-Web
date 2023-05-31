@@ -9,7 +9,7 @@ function Inicio() {
         <h2 className="h1">BIENVENIDO A TALLER M&A</h2>
 
         <div className="card-container">
-          <div className="card">
+          <div className="card1">
             <img
               className="card-image"
               src={require("../img/IMG1.png")}
