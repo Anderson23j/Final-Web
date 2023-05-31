@@ -62,7 +62,7 @@ function Inicio() {
         <div className="card">
           <img
             className="icon"
-            src={require("../img/icono1.png")}
+            src={require("../img/icono2.png")}
             alt="Icono 4"
           />
           <h2 className="titulo_h2">Precios competitivos</h2>
