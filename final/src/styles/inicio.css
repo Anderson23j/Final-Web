@@ -30,14 +30,9 @@
   margin-top: 40px;
 }
 
-.card1 {
-  width: 300px;
-  padding: 20px;
-  background-color: #5767aa;
-}
 .card {
-  width: 350px;
-  padding: 20px;
+  width: 600px;
+  padding: 10px;
   background-color: var(--mainColorLight);
   border-radius: 10px;
   color: white;
@@ -66,8 +61,8 @@
   margin-bottom: 10px;
 }
 .card-image {
-  width: 260px;
-  height: 190px;
+  width: 400px;
+  height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
