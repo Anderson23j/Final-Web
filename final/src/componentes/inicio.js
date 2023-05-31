@@ -55,8 +55,8 @@ function Inicio() {
           />
           <h2 className="titulo_h2">Servicio de calidad</h2>
           <p className="texto">
-            Nuestro objetivo es brindarte un servicio de alta calidad y
-            satisfacción garantizada.
+            Nuestro objetivo es brindarte un servicio de
+            <br /> alta calidad y satisfacción garantizada.
           </p>
         </div>
         <div className="card">
