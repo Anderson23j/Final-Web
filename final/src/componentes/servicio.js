@@ -17,7 +17,7 @@ const CartasAzules = () => {
         <div className="contenido">
           <h3 className="h3">MECANICA<br/>ESPECIALIZADA</h3>
           <p className="editable">
-            Aire Acondicionado<br/>Amortiguadores<br/>Correa de Reparticion<br/>Kit de
+            Aire Acondicionado<br/>Amortiguadores<br/>Kit de
             Embrague<br/>Reparacion de Motor
           </p>
         </div>
@@ -25,7 +25,7 @@ const CartasAzules = () => {
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">ESTETICA<br/>AUTOMOTRIZ</h3>
-          <p className="editable">Latoneria<br/>Pintura</p>Body Kit
+          <p className="editable">Latoneria<br/>Pintura Body Kit<br/>Reparacion Chasis<br/>Entonacion</p>
           
         </div>
       </div>
