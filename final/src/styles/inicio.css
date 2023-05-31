@@ -1,187 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
-}
-
-body {
-  background-color: rgb(235, 235, 235);
-}
-.Card {
-  margin-top: 4rem;
-  margin-right: 10rem;
-  margin-left: 20px;
-  align-items: center;
-}
 .inicio {
-  margin-top: 3.5rem;
-  margin-right: 10rem;
-  width: 300px;
-  height: 320px;
-  float: right;
-  margin-left: 20px;
-  padding: 20px;
-  border-radius: 30px;
-  background-color: #29335c;
-  align-items: center;
+  text-align: center;
 }
+
 .h1 {
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  text-align: center;
-  margin-top: 0; /* Elimina el margen superior del título */
+  font-size: 28px;
 }
+
 .p {
-  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.estrellas {
   font-size: 20px;
-  margin-bottom: 0; /* Elimina el margen inferior del párrafo */
-  margin-top: 1rem;
-  margin-left: 4%;
-  text-align: center;
-}
-.Card_img {
-  border: 1px solid #ccc;
-  width: 400px;
-  margin-left: 18%;
-  border-radius: 0px 80px;
-  max-width: 100%;
-  height: auto;
-}
-p {
-  font-size: 25px;
-  margin-left: 12rem;
-}
-@media (max-width: 767px) {
-  /* Estilos específicos para pantallas pequeñas */
-  .Card_img {
-    border: 1px solid #ccc;
-    width: 400px;
-    margin-left: 18%;
-    border-radius: 0px 80px;
-    max-width: 100%;
-    height: auto;
-  }
-  .Card {
-    margin-top: 4rem;
-    margin-right: 10rem;
-    margin-left: 20px;
-    align-items: center;
-  }
+  margin-bottom: 10px;
 }
 
-/* Estilos para pantallas de tamaño mediano (tablet) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos específicos para pantallas medianas */
-  .Card_img {
-    border: 1px solid #ccc;
-    width: 400px;
-    margin-left: 18%;
-    border-radius: 0px 80px;
-    max-width: 100%;
-    height: auto;
-  }
-  .Card {
-    margin-top: 6rem;
-    margin-right: 10rem;
-    margin-left: 20px;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-}
-
-/* Estilos para pantallas de tamaño grande (desktop) */
-@media (min-width: 1024px) {
-  /* Estilos específicos para pantallas grandes */
-  .Card_img {
-    border: 1px solid #ccc;
-    width: 400px;
-    margin-left: 18%;
-    border-radius: 0px 80px;
-    max-width: 100%;
-    height: auto;
-  }
-  .Card {
-    margin-top: 5rem;
-    margin-right: 10rem;
-    margin-left: 20px;
-    align-items: center;
-  }
-}
-
-.container {
+.card-container {
   display: flex;
-}
-
-.Card1 {
-  flex: 1; /* Distribuye el espacio disponible entre las cards */
-  margin: 5rem 1rem; /* Ajusta los márgenes según tus necesidades */
-  width: 500px;
-  height: 340px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #b8bfdb;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.Card1:nth-child(odd) {
-  margin-right: 5rem; /* Añade un margen derecho solo a las cards impares */
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #3498db;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  opacity: 0;
+  animation-name: fade-in-card;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
-.Card1:nth-child(even) {
-  margin-left: 52rem; /* Añade un margen izquierdo solo a las cards pares */
-  margin-top: -26rem;
-}
-
-/* Estilos comunes a ambas cards */
-.titulo_h2 {
-  margin-left: 18%;
-  font-size: 30px;
-}
-
-.icon1 {
-  margin-left: 12rem;
-  margin-top: 1rem;
-}
-
-.texto {
-  margin-top: 1rem;
-  margin-left: 5%;
-  text-align: justify;
-}
-
-.animated-h1 {
-  display: inline-block;
-  font-size: 48px;
-  font-weight: bold;
-  transition: transform 0.3s;
-}
-
-.animated-h1:hover {
-  cursor: pointer;
-  animation: shake 0.3s infinite;
-}
-
-@keyframes shake {
+@keyframes fade-in-card {
   0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-2px, -2px);
-  }
-  50% {
-    transform: translate(0, 0);
-  }
-  75% {
-    transform: translate(2px, -2px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    transform: translate(0, 0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-.animated-h1 {
-  margin-left: 35rem;
-  margin-top: 25px;
-  margin-bottom: -2%;
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
 }

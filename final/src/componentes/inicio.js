@@ -6,37 +6,28 @@ function Inicio() {
   return (
     <>
       <div className="inicio">
-        <h2 className="h1">Taller Mecánico</h2>
-        <p className="p">
-          Tu taller mecánico de <br />
-          confianza en Medellín
-        </p>
-        <div>
-          <h2 className="estrellas">Califica el producto</h2>
-          <StarRating />
+        <h2 className="h1">BIENVENIDO A TALLER M&A</h2>
+
+        <div className="card-container">
+          <div className="card">
+            <img
+              className="card-image"
+              src={require("../img/IMG1.png")}
+              alt="Poster"
+            />
+            <h2>Tu taller mecánico de confianza en Medellín</h2>
+            <p>Califica nuestro servicio</p>
+            <StarRating />
+          </div>
         </div>
       </div>
-      <div className="Card">
-        <img className="Card_img" src={require("../img/IMG1.png")} />
-        <p>Calificado por 4000 clientes de Taller M&A</p>
-      </div>
-      <h1 class="animated-h1">
-        <span>B</span>
-        <span>I</span>
-        <span>E</span>
-        <span>N</span>
-        <span>V</span>
-        <span>E</span>
-        <span>N</span>
-        <span>I</span>
-        <span>D</span>
-        <span>O</span>
-        <span>S</span>
-      </h1>
-
-      <div className="conatiner">
-        <div className="Card1">
-          <img className="icon1" src={require("../img/icono1.png")} />
+      <div className="card-container">
+        <div className="card">
+          <img
+            className="icon"
+            src={require("../img/icono1.png")}
+            alt="Icono 1"
+          />
           <h2 className="titulo_h2">Técnicos especializados</h2>
           <p className="texto">
             Contamos con técnicos especializados, <br />
@@ -44,12 +35,40 @@ function Inicio() {
             <br /> en la ciudad de Medellín.
           </p>
         </div>
-        <div className="Card1">
-          <img className="icon1" src={require("../img/icono2.png")} />
+        <div className="card">
+          <img
+            className="icon"
+            src={require("../img/icono2.png")}
+            alt="Icono 2"
+          />
           <h2 className="titulo_h2">Tecnología de punta</h2>
           <p className="texto">
             Ofrecemos las mejores soluciones profesionales y especializadas, con
-            los mejores equipos en tecnología..
+            los mejores equipos en tecnología.
+          </p>
+        </div>
+        <div className="card">
+          <img
+            className="icon"
+            src={require("../img/icono1.png")}
+            alt="Icono 3"
+          />
+          <h2 className="titulo_h2">Servicio de calidad</h2>
+          <p className="texto">
+            Nuestro objetivo es brindarte un servicio de alta calidad y
+            satisfacción garantizada.
+          </p>
+        </div>
+        <div className="card">
+          <img
+            className="icon"
+            src={require("../img/icono1.png")}
+            alt="Icono 4"
+          />
+          <h2 className="titulo_h2">Precios competitivos</h2>
+          <p className="texto">
+            Te ofrecemos precios competitivos y transparentes para todos
+            nuestros servicios de mecánica.
           </p>
         </div>
       </div>
