@@ -8,8 +8,8 @@ const CartasAzules = () => {
         <div className="contenido">
           <h3 className="h3">MECANICA BASICA</h3>
           <p className="editable">
-            Alineacion y Balenceo Cambio de <br />
-            Aceite Cambio de Frenos Sincronizacion
+            Alineacion y Balenceo Cambio de
+            Aceite<br/>Cambio de Frenos<br/>Sincronizacion
           </p>
         </div>
       </div>
@@ -17,15 +17,15 @@ const CartasAzules = () => {
         <div className="contenido">
           <h3 className="h3">MECANICA ESPECIALIZADA</h3>
           <p className="editable">
-            Aire Acondicionado Amortiguadores Correa de Reparticion Kit de
-            Embrague Reparacion de Motor
+            Aire Acondicionado<br/>Amortiguadores<br/>Correa de Reparticion<br/>Kit de
+            Embrague<br/>Reparacion de Motor
           </p>
         </div>
       </div>
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">ESTETICA AUTOMOTRIZ</h3>
-          <p className="editable">Latoneria Pintura</p>
+          <p className="editable">Latoneria<br/>Pintura</p>
         </div>
       </div>
     </div>
