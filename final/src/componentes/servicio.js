@@ -25,7 +25,7 @@ const CartasAzules = () => {
       <div className="carta">
         <div className="contenido">
           <h3 className="h3">ESTETICA<br/>AUTOMOTRIZ</h3>
-          <p className="editable">Latoneria<br/>Pintura Body Kit<br/>Reparacion Chasis<br/>Entonacion</p>
+          <p className="editable">Latoneria<br/>Pintura Body Kit<br/>Wrap<br/>Entonacion</p>
           
         </div>
       </div>
