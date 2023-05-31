@@ -1,13 +1,14 @@
 .contenedor {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .carta {
   width: 240px;
   height: 300px;
-  margin: 3rem;
+  margin: 25px;
+  margin-bottom: 12% ;
   background-color: #5767aa;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -27,7 +28,7 @@
 .contenido {
   width: 90%;
   height: 90%;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -37,11 +38,12 @@
 
 .h3 {
   font-size: 20px;
+  margin-top: -4rem;
 }
 
 .editable {
   color: black;
-  min-height: 40px;
-
+  font-size: 15px;
+  margin-top: 15%;
   text-align: center;
 }
