@@ -54,3 +54,21 @@
   height: 50px;
   margin-bottom: 10px;
 }
+.card-image {
+  width: 260px;
+  height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-image img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-image p {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
